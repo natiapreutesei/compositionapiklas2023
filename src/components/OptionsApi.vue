@@ -5,8 +5,8 @@
       <button @click="increment" class="btn btn-danger">&#10133;</button>
     </div>
     <ul class="list-group">
-      <span class="">Deelnemers:</span>
-      <li class="list-group-item" v-for="deelnemer in deelnemers" :key="deelnemer">{{ deelnemer }}</li>
+      <span class="fw-bold">Deelnemers:</span>
+      <li class="list-group-item text-center" v-for="deelnemer in deelnemers" :key="deelnemer">{{ deelnemer }}</li>
     </ul>
     <p>Places left: {{ places }} out of {{ amount }}</p>
   </div>

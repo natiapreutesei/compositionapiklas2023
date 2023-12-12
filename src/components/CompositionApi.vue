@@ -12,8 +12,8 @@ const refs = useConcertObject();
       <button @click="refs.increment" class="btn btn-warning">&#10133;</button>
     </div>
     <ul class="list-group">
-      <span class="">Deelnemers:</span>
-      <li class="list-group-item" v-for="deelnemer in refs.deelnemers.value" :key="deelnemer">{{ deelnemer }}</li>
+      <span class="fw-bold">Deelnemers:</span>
+      <li class="list-group-item text-center" v-for="deelnemer in refs.deelnemers.value" :key="deelnemer">{{ deelnemer }}</li>
     </ul>
     <p>Places left: {{ refs.places }} out of {{ refs.amount.value }}</p></div>
 </template>

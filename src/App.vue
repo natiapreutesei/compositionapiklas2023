@@ -2,6 +2,7 @@
 
 import OptionsApi from "@/components/OptionsApi.vue";
 import CompositionApi from "@/components/CompositionApi.vue";
+import AnderComponent from "@/components/AnderComponent.vue";
 </script>
 
 <template>
@@ -10,11 +11,20 @@ import CompositionApi from "@/components/CompositionApi.vue";
     <hr>
     <h2 class="text-center">Data</h2>
     <hr>
-    <h3>OptionsAPI Syntax</h3>
+    <h3>OptionsAPI - Syntax</h3>
     <options-api/>
     <hr>
-    <h3>CompositionAPI Syntax</h3>
+    <h3>CompositionAPI - Syntax</h3>
     <composition-api/>
+    <hr>
+    <h3>Other Component</h3>
+    <ander-component/>
+    <teleport to="#externalhtml">
+      Deze piece wordt in externe html geplaatst
+
+    </teleport>
+    <hr>
+    <h3>Vervolg</h3>
   </div>
 </template>
 
